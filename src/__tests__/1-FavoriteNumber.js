@@ -11,6 +11,7 @@ import FavoriteNumber from '../components/FavoriteNumber'
   - import '@testing-library/jest-dom/extend-expect' extends expect function
     to use jest-dom functions
 */
+
 test('renders a number input with a label "Favorite Number"', () => {
   const { getByLabelText } = render(<FavoriteNumber />)
   const input = getByLabelText(/favorite number/i)
@@ -28,6 +29,7 @@ test('renders a number input with a label "Favorite Number"', () => {
   - element selectors from render() are prefixed with 'get' or 'query'. Use either of those for
     corresponding use case.
 */
+
 test('invalid value should show error message', () => {
   const { getByLabelText, getByRole, rerender, queryByRole } = render(
     <FavoriteNumber />
