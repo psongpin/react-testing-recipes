@@ -1,8 +1,8 @@
 // this is just a fake module to simulate interacting with a server
 
 // simulate the network request time...
-const sleep = (time) =>
-  new Promise((resolve) => {
+const sleep = time =>
+  new Promise(resolve => {
     setTimeout(resolve, time)
   })
 

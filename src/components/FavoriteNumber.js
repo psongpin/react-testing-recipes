@@ -5,7 +5,7 @@ const FavoriteNumber = ({ min, max }) => {
   const [number, setNumber] = useState(0)
   const [numberEntered, setNumberEntered] = useState(false)
 
-  const handleChange = (event) => {
+  const handleChange = event => {
     setNumber(Number(event.target.value))
     setNumberEntered(true)
   }

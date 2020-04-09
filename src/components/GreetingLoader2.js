@@ -5,7 +5,7 @@ import * as api from '../utils/api'
 const GreetingLoader = ({ loadGreeting }) => {
   const [greeting, setGreeting] = useState('')
 
-  const loadGreetingForInput = async (event) => {
+  const loadGreetingForInput = async event => {
     event.preventDefault()
     const { data } = await loadGreeting(event.target.elements.name.value)
     setGreeting(data.greeting)
