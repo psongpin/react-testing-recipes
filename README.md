@@ -21,3 +21,9 @@ This is a work in progress. This will serve as a recipe for conducting tests wit
 - **05-HiddenMessage:**
   - Testing modules with rerendering delays like `react-transition-group`
   - Mocking npm modules
+- **06-ErrorBoundary**
+  - Testing `componentDidCatch` Lifecycle
+  - Testing arguments using `expect.any()` and `expect.stringContaining()`
+  - Mocking `console.error` or other functions using `jest.spy().mockImplementation()`
+  - Clearing mocks using `mockRestore()`, `clearAllMocks()`, `mockClear()`
+  - Snapshot testing using `toMatchInlineSnapshot()`
