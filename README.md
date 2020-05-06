@@ -32,9 +32,15 @@ This is a work in progress. This will serve as a recipe for conducting tests wit
   - Snapshot testing using `toMatchInlineSnapshot()`
 
 - **07-PostEdition**
+
   - Generate fake data using `test-data-bot`
   - Testing variables that has `Date()` value
   - Testing form submit
   - Mocking resolve and rejected promise using `mockResolvedValueOnce()` and `mockRejectedValueOnce()`
   - Mocking Redirect from `react-router-dom`
   - Testing new jsx elements during rerender using `findByRole()`
+
+- **08-Routes**
+  - Testing `react-router` rendered components based on matching paths
+  - Creating router with custom `history` prop
+  - Creating reausable helper for wrapping components that needs `context`
